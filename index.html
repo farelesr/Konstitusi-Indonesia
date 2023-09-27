@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+    content="Website yang dibuat dalam rangka untuk memberikan informasi tentang konstitusi di Indonesia sekaligus untuk memenuhi nilai tugas mata pelajaran PPkn">
+  <meta name="author" content="Muhammad Farel Alfhareza">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="Icon" type="Icon"
+    href="data:image/jpeg;base64,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">
+  <title>Konstitusi Indonesia</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/well.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <link rel="stylesheet" href="assets/css/rel.css">
+</head>
+
+<body>
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <a href="#"><em style="font-size: 30px;">Konstitusi</em></a>
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="#section1">Beranda</a></li>
+        <li><a href="#section02">Tentang</a></li>
+        <li class="has-submenu"><a href="#section2">Sejarah</a>
+          <ul class="sub-menu">
+            <li><a href="#section2">Konstitusi Sebelumnya</a></li>
+            <li><a href="#section3">Konstitusi saat ini</a></li>
+            <li><a href="https://www.mkri.id/index.php?page=web.Berita&id=11776" class="external">Sumber sejarah</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#section4">Amandemen</a></li>
+        <li><a href="#section5">Kreator</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+      <div class="caption">
+        <h2><em>Konstitusi</em> <br> di Indonesia</h2>
+        <div class="main-button">
+          <div class="scroll-to-section"><a href="#section2">cari tahu sejarahnya!</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-pencil"></i>Pengertian</h4>
+              </div>
+              <div class="content-hide">
+                <p>Konstitusi adalah seperangkat prinsip-prinsip dasar dan aturan-aturan yang mengatur tata cara
+                  pemerintahan suatu negara atau entitas politik lainnya.</p>
+                <p class="hidden-sm">Konstitusi adalah seperangkat prinsip-prinsip dasar dan aturan-aturan yang mengatur
+                  tata cara pemerintahan suatu negara.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-graduation-cap"></i>Sifat</h4>
+              </div>
+              <div class="content-hide">
+                <p>konstitusi dikenal memiliki sifat yang flexible (luwes) atau rigid (kaku), tertulis dan tidak
+                  tertulis.</p>
+                <p class="hidden-sm">konstitusi dikenal memiliki sifat yang flexible (luwes) atau rigid (kaku), tertulis
+                  dan tidak tertulis.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Tujuan</h4>
+              </div>
+              <div class="content-hide">
+                <p>Tujuan utama dari konstitusi adalah untuk mengatur hubungan antara pemerintah dan warga negara, serta
+                  antar lembaga-lembaga pemerintah, sehingga mendorong penyelenggaraan pemerintahan yang adil dan
+                  berdasarkan hukum.</p>
+                <p class="hidden-sm">Tujuan utama dari konstitusi adalah untuk mengatur hubungan antara pemerintah dan
+                  warga negara sehingga mendorong pemerintahan yang adil dan berdasarkan hukum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section courses" data-section="section02">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Poin Penting Tentang Konstitusi Indonesia</h2>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="down-content">
+              <h4>Pancasila</h4>
+              <p>Pancasila adalah dasar negara Indonesia. Pancasila adalah filsafat dasar yang terdiri dari lima prinsip
+                yang merupakan rumusan dan pedoman kehidupan berbangsa dan bernegara bagi seluruh rakyat Indonesia.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="down-content">
+              <h4>Sistem Pemerintahan</h4>
+              <p>Konstitusi Indonesia mendefinisikan negara sebagai negara kesatuan yang berbentuk republik dengan
+                sistem pemerintahan presidensial. Presiden adalah kepala negara dan kepala pemerintahan.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="down-content">
+              <h4>Hak Asasi Manusia</h4>
+              <p>Hak asasi manusia merupakan hak dasar yang secara kodrati melekat pada diri manusia, bersifat universal
+                dan langgeng, oleh karena itu harus dilindungi, dihormati, dipertahankan, dan tidak boleh diabaikan,
+                dikurangi, atau dirampas.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="down-content">
+              <h4>Pemilihan Umum</h4>
+              <p>Konstitusi mengatur tata cara pemilihan umum dan pembentukan lembaga legislatif, seperti Dewan
+                Perwakilan Rakyat (DPR) dan Dewan Perwakilan Daerah (DPD).</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="down-content">
+              <h4>Pembagian Kekuasaan</h4>
+              <p>Konstitusi mengatur pembagian kekuasaan antara lembaga-lembaga pemerintahan, yaitu eksekutif,
+                legislatif, dan yudikatif, untuk menjaga keseimbangan kekuasaan.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="down-content">
+              <h4>Amandemen</h4>
+              <p>UUD 1945 dapat diamendemen, dan prosedur amendemen diatur oleh konstitusi itu sendiri. Proses amendemen
+                melibatkan persetujuan dari DPR dalam dua periode sidang yang berbeda, diikuti oleh persetujuan MPR.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Sejarah Konstitusi di Indonesia</h2>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Undang-Undang Dasar 1945</a></li>
+              <li><a href='#tabs-2'>Konstitusi Republik Indonesia Serikat </a></li>
+              <li><a href='#tabs-3'>Undang-Undang Dasar Sementara 1950</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6 mt-5">
+                    <img
+                      src="https://vivajusticia.law.ugm.ac.id/wp-content/uploads/sites/180/2018/02/PPKI_ratio-16x9.jpg"
+                      alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Undang-Undang Dasar 1945 <br><span style="font-size: 15px;">(18 Agustus 1945 - 27 Desember
+                        1949)</span></h4>
+                    <p>Setelah proklamasi kemerdekaan pada 17 Agustus 1945, Undang-Undang Dasar Republik Indonesia
+                      disahkan pada 18 Agustus 1945 oleh Panitia Persiapan Kemerdekaan Indonesia. Meskipun singkat
+                      (hanya 37 pasal), itu memenuhi prinsip-prinsip dasar konstitusi.
+                    </p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img
+                      src="https://asset.kompas.com/crops/glQtd0F1k-YpSZHdlRpZKVqkW9g=/35x0:694x439/750x500/data/photo/2020/07/20/5f154b1c084cf.png"
+                      alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Konstitusi Republik Indonesia Serikat <br><span style="font-size: 15px;">(27 Desember 1949 - 17
+                        Agustus 1950)</span></h4>
+                    <p>Dalam konteks perjuangan melawan agresi Belanda, terbentuklah Republik Indonesia Serikat dengan
+                      konstitusi sendiri. Namun, hal ini hanya berlaku untuk sebagian wilayah Indonesia.
+                    </p>
+                  </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6 mt-4">
+                    <img
+                      src="https://asset.kompas.com/crops/48pqEE15mwkwld57MO-VSknTapU=/0x32:400x299/780x390/data/photo/2020/03/09/5e6620eab37e4.jpeg"
+                      alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Undang-Undang Dasar Sementara 1950 <br><span style="font-size: 15px;">(17 Agustus 1950 - 5 Juli
+                        1959)</span></h4>
+                    <p>Karena semangat kesatuan yang kuat di Indonesia, Republik Indonesia Serikat mengalami
+                      penggabungan kembali menjadi Negara Kesatuan Republik Indonesia. Ini menghasilkan Undang-Undang
+                      Dasar Sementara 1950, yang digunakan hingga 5 Juli 1959.
+                    </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section coming-soon" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7 col-xs-12">
+          <div class="continer centerIt">
+            <div>
+              <h4>Konstitusi yang berlaku di Indonesia saat ini adalah: <br><em>Undang-Undang Dasar</em> (UUD) 1945<br>
+                <span style="font-size: 20px;">berlaku kembali <em> sejak:</em></span>
+              </h4>
+              <div class="counter ml-5">
+
+                <div class="days">
+                  <span class="mt-2">Tanggal</span>
+                  <div class="value">05</div>
+                </div>
+
+                <div class="hours">
+                  <span class="mt-2">Bulan</span>
+                  <div class="value">Juli</div>
+                </div>
+
+                <div class="minutes">
+                  <span class="mt-2">tahun</span>
+                  <div class="value">1959</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="right-content">
+            <div class="top-content">
+              <h6 style="font-size: 15px;">Dengan dekrit Presiden 5 Juli 1959 berlakulah kembali Undang-Undang Dasar
+                1945. Dan perubahan Majelis Permusyawaratan Rakyat Sementara Orde Lama pada masa 1959-1965 menjadi
+                Majelis Permusyawaratan Rakyat Sementara Orde Baru. Perubahan itu dilakukan karena Majelis
+                Permusyawaratan Rakyat Sementara Orde Lama dianggap kurang mencerminkan pelaksanaan Undang-Undang Dasar
+                1945 secara murni dan konsekuen.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section courses" data-section="section4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Amandemen UUD 1945</h2>
+          </div>
+        </div>
+        <div class="amandemen col-md-12">
+          <div class="item">
+            <div class="amandemen-card">
+              <h4>Amandemen I</h4>
+              <p>14-21 Oktober 1999</p>
+              <p>Amandemen UUD 1945 pertama dilakukan karena Kurangnya sistem cek dan keseimbangan pada
+                institusi-institusi pemerintahan. Dominasi kekuasaan eksekutif yang terlalu kuat, dengan hak prerogatif
+                dan kekuasaan legislatif yang terlalu besar di tangan Presiden</p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="amandemen-card">
+              <h4>Amandemen II</h4>
+              <p>7-18 Agustus 2000</p>
+              <p>Amandemen kedua dilakukan karena beberapa pasal dinilai masih memiliki makna ganda atau multitafsir.
+                Kekuasaan di beberapa lembaga seperti MPR juga masih terlalu besar, sehingga dinilai belum demokratis.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="amandemen-card">
+              <h4>Amandemen III</h4>
+              <p>1-9 November 2001</p>
+              <p>Amandemen ketiga dilatarbelakangi oleh masih adanya kelemahan sistematika dan substansi undang-undang
+                dasar pasca perubahan, yakni: Inkonsistensi dalam penjabaran sejumlah pasal, seperti pasal wewenang
+                lembaga negara. Kerancuan sistem pemerintahan.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div class="amandemen-card">
+              <h4>Amandemen IV</h4>
+              <p>1-12 Agustus 2002</p>
+              <p>Amandemen keempat dilakukan karena Perlunya desentralisasi yang lebih berorientasi kepada daerah
+                otonom. Tidak ada grand design yang jelas dalam tiga amandemen sebelumnya. Perlu adanya penguatan peran
+                parlemen dalam hal mewujudkan fungsinya sebagai perwakilan rakyat.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" data-section="section5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading">
+            <h2>Creator</h2>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="creator">
+            <div class="card-creator">
+              <div class="atas">
+                <div class="atas1">
+                  <img src="assets/images/logo_3.jpg" alt="">
+                  <p> SMAN 3 BANDUNG</p>
+                </div>
+                <p>Guru Pembimbing: <br> Raden Abdurakhim Abubakar</p>
+                <p>Dibuat oleh: <br> Muhammad Farel Alfhareza <br> Baskoro Prastyo Adji <br> Arya Faisal Pasha <br>
+                  Mohamad
+                  Lingga Anum
+                </p>
+              </div>
+              <div class="logo">
+                <div class="link">
+                  <h3><a href="https://www.instagram.com/farelr_eza"><i class="fa fa-instagram"></i></a></h3>
+                </div>
+                <div class="link">
+                  <h3><a href="https://wa.me/6281283410747"><i class="fa fa-whatsapp"></i></a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7921.636449360135!2d107.60711963240323!3d-6.912325699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e76961f736bb%3A0xec1e28a948930064!2sSMA%20Negeri%203%20Bandung!5e0!3m2!1sid!2sid!4v1688655101213!5m2!1sid!2sid"
+              width="100%" height="422px" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p style="font-size: 15px;"><a href="" style="color: rgb(126, 197, 197);">SMAN 3 </a>Bandung
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+      if ($(e.target).hasClass('external')) {
+        return;
+      }
+      e.preventDefault();
+      $('#menu').removeClass('active');
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
+</html>

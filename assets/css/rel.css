@@ -1,0 +1,85 @@
+.amandemen {
+  display: flex;
+  width: 90vh;
+  gap: 20px;
+}
+
+.amandemen-card {
+  min-height: 50vh;
+  height: auto;
+  width: 22vw;
+  background: rgba(255, 255, 255, .7);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.creator {
+  gap: 10px;
+  height: 420px;
+  background: #4488a769;
+  padding: 60px;
+}
+
+.creator p {
+  font-size: 17px;
+  color: aliceblue;
+}
+
+.creator .logo {
+  display: flex;
+  gap: 5px;
+}
+
+.atas1 {
+  display: flex;
+  gap: 10px;
+}
+
+.atas1 img {
+  height: 30px;
+  border-radius: 5px;
+  margin-top: -5px;
+}
+
+.logo .link {
+  display: flex;
+  height: 50px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  background: #52c7d6;
+  margin: 3px;
+  transition: 1s ease;
+}
+
+.logo .link:hover {
+  box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.75);
+  transition: 1s ease;
+  background: #1ab0f0;
+}
+
+.logo .link a {
+  color: aliceblue;
+}
+
+.logo .link i {
+  margin-top: 10px;
+}
+
+footer{
+  border-top: 1px solid rgb(138, 138, 138);
+}
+
+@media screen and (max-width: 940px) {
+  .amandemen {
+    flex-direction: column;
+  }
+
+  .amandemen-card {
+    width: 87vw;
+    height: auto;
+  }
+}
